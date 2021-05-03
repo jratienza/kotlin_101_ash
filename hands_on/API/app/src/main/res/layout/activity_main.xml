@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_weight="10"
+    android:orientation="vertical"
+  >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Pokédex"
+        android:textSize="35sp"
+        android:textColor="#FFCb05"
+        android:background="#3466AF"
+        android:drawableLeft="@drawable/ic_pokeball_icon"/>
+
+    <FrameLayout
+        android:background="#76A6ED"
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        android:layout_weight="5.5"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pokemon_info_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:paddingTop="0dp"
+        android:background="#76A6ED"/>
+
+</LinearLayout>
